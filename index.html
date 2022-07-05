@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet"> 
-    <script src="/index.js"></script>  
+    <script src="js/index.js"></script>  
     <title>FooCamp-Test</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <span class="main-title-border"></span>
             </header>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ratione dicta, magnam, vero saepe vitae earum, nisi deleniti eaque deserunt ut praesentium est animi! Porro corporis sed consectetur ipsam obcaecati est sequi! Fugiat dignissimos similique earum, tempora corporis dolor, velit pariatur libero.</p>
-            <button type="button" id="send-btn" onclick="">enviar tarjeta</button>
+            <button type="button" id="open-btn" onclick="">enviar tarjeta</button>
         </article>
         <article class="initial-modal">
             <div class="initial-modal-content">
@@ -27,11 +27,11 @@
                 <form action="example.htm">
                     <input type="text" name="name" placeholder="Escribe un nombre...">
                 </form>
+                <span>* El campo esta vacío, escribe un nombre para poder enviar la tarjeta</span>
             </div>
-            <div>
+            <div class="btn-container">
                 <button type="button" id="cancel-btn" onclick="">cancelar</button>
                 <button type="button" id="continue-btn" onclick="">continuar</button>
-                <span>* El campo esta vacío, escribe un nombre para poder enviar la tarjeta</span>
             </div>
         </article>
         <footer>
