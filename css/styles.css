@@ -49,7 +49,7 @@ h1, h2, h3 {
 
 .initial-modal {
   background-color: #463a5c;
-  display: hidden;
+  display: none;
   height: 100%;
   left: 0;
   position: fixed;
@@ -111,6 +111,9 @@ h1, h2, h3 {
       padding: 10px 15px;
       text-transform: uppercase;
       width: 18.5rem; }
+      .initial-modal .btn-container #cancel-btn :hover {
+        background-color: #505050;
+        color: #ffffff; }
     .initial-modal .btn-container #continue-btn {
       background-color: #e000a8;
       border-radius: .5rem;
@@ -122,3 +125,30 @@ h1, h2, h3 {
       padding: 10px 15px;
       text-transform: uppercase;
       width: 18.5rem; }
+      .initial-modal .btn-container #continue-btn :hover {
+        background-color: #ffffff;
+        color: #e000a8; }
+
+.success-message {
+  background-color: #5ee6b2;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .success-message h2 {
+    color: #000000;
+    font-size: 4rem;
+    padding-top: 25rem;
+    margin: 0 auto;
+    width: 30%; }
+  .success-message .footer-title-border {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    bottom: 0;
+    left: 32%;
+    width: 32%; }

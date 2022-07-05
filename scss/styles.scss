@@ -68,7 +68,7 @@ h1, h2, h3 {
 
 .initial-modal {
     background-color: $bg-purple;
-    display: hidden;
+    display: none;
     height: 100%;
     left: 0;
     position: fixed;
@@ -146,6 +146,11 @@ h1, h2, h3 {
             padding: 10px 15px;
             text-transform: uppercase;
             width: 18.5rem;
+
+            :hover {
+                background-color: #505050;
+                color: $white;
+            }
         }
 
         #continue-btn {
@@ -159,6 +164,40 @@ h1, h2, h3 {
             padding: 10px 15px;
             text-transform: uppercase;
             width: 18.5rem;
+
+            :hover {
+                background-color: $white;
+                color: $hotpink;
+            }
         }
+    }
+}
+
+.success-message {
+    background-color: $green;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    h2 {
+        color: $black;
+        font-size: 4rem;
+        padding-top: 25rem;
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .footer-title-border {
+        background-color: $white;
+        display: block;
+        height: 2px;
+        position: relative;
+        bottom: 0;
+        left: 32%;
+        width: 32%;
     }
 }
