@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Canaval">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet"> 
     <script src="js/index.js"></script>  
@@ -17,27 +18,29 @@
                 <span class="main-title-border"></span>
             </header>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus ratione dicta, magnam, vero saepe vitae earum, nisi deleniti eaque deserunt ut praesentium est animi! Porro corporis sed consectetur ipsam obcaecati est sequi! Fugiat dignissimos similique earum, tempora corporis dolor, velit pariatur libero.</p>
-            <button type="button" id="open-btn" onclick="">enviar tarjeta</button>
+            <button type="button" id="open-btn" onclick="openSendModal()">enviar tarjeta</button>
         </article>
-        <article class="initial-modal">
-            <div class="initial-modal-content">
-                <h2>Deseas enviar la tarjeta?</h2>
-                <div class="title-border"></div>
-                <p>Escribe el nombre de la persona a quién quieres enviar la tarjeta</p>
-                <form action="example.htm">
-                    <input type="text" name="name" placeholder="Escribe un nombre...">
-                </form>
-                <span>* El campo esta vacío, escribe un nombre para poder enviar la tarjeta</span>
-            </div>
-            <div class="btn-container">
-                <button type="button" id="cancel-btn" onclick="">cancelar</button>
-                <button type="button" id="continue-btn" onclick="">continuar</button>
+        <article class="initial-modal" id="card-modal">
+            <div class="initial-modal-container">
+                <div class="initial-modal-content">
+                    <h2>Deseas enviar la tarjeta?</h2>
+                    <span class="title-border"></span>
+                    <p>Escribe el nombre de la persona a quién quieres enviar la tarjeta</p>
+                    <input type="text" name="name" placeholder="Escribe un nombre..." id="input-name">
+                    <span class="error-message" id="error-msg" >* El campo esta vacío, escribe un nombre para poder enviar la tarjeta</span>
+                </div>
+                <div class="btn-container">
+                    <button type="button" id="cancel-btn" class="initial-modal-btn" onclick="cancelSend()">cancelar</button>
+                    <button type="button" id="continue-btn" class="initial-modal-btn" onclick="sendCard()">continuar</button>
+                </div>
             </div>
         </article>
-        <footer class="success-message">
-          <h2>Tarjeta enviada a Lina Pérez!</h2>
-          <span class="footer-title-border"></span>
-        </footer>  
+        <article class="success-modal" id="send-success">
+            <div class="success-modal-container">
+                <h2>Tarjeta enviada a <span id="render-name"></span>!</h2>
+                <span class="success-title-border"></span>
+            </div>
+        </article>  
     </section>   
 </body>
 </html>
