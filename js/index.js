@@ -11,7 +11,6 @@ function cancelSend() {
 
 function sendCard() {
     var userName = document.getElementById('input-name').value;
-
     if (document.getElementById('input-name').value) {
         document.getElementById('send-success').style.display = 'block';
         document.getElementById("render-name").innerHTML = userName;
@@ -20,11 +19,7 @@ function sendCard() {
     }
 }
 
-window.onclick = function(event) {
-    var clickBye = document.getElementById('send-success');
-    if (event.target == clickBye) {
-        clickBye.style.display = "none";
-    }
-}
+
+
 
 

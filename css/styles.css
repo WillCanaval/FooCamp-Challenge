@@ -111,7 +111,8 @@ h1, h2 {
       margin-top: 10px;
       padding: 10px 15px;
       width: calc(50% - 5px);
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      cursor: pointer; }
     .initial-modal .btn-container #cancel-btn {
       background-color: #ffffff;
       color: #000000;
