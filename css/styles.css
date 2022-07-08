@@ -147,9 +147,20 @@ h1, h2 {
     font-size: 4rem;
     margin: 0; }
   .success-modal .success-title-border {
-    background-color: #ffffff;
+    border-top: 2px solid #ffffff;
+    background-color: #5ee6b2;
     display: block;
-    height: 2px;
     right: 37px;
     margin-top: 10px;
-    position: relative; }
+    position: relative;
+    text-align: right; }
+  .success-modal .return-home-btn {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer; }

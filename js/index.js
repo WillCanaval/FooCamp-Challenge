@@ -6,6 +6,7 @@ function openSendModal() {
 function cancelSend() {
     document.getElementById("card-modal").style.display = "none";
     document.getElementById("error-msg").style.display = "none";
+    document.getElementById("input-name").value = "";
     
 }
 
@@ -19,6 +20,11 @@ function sendCard() {
     }
 }
 
+function returnHome() {
+    document.getElementById("send-success").style.display = "none";
+    document.getElementById("card-modal").style.display = "none";
+    document.getElementById("input-name").value = "";
+}
 
 
 
